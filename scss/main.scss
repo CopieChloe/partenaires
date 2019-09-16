@@ -1,0 +1,137 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+    .header_mobile {
+        width: 100vw;
+
+        .logo_container,
+        .menu_container {
+            height: 10vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo_container {
+            a {
+                .logo_img {
+                    height: 10vh;
+                }
+            }
+
+        }
+
+        .menu_container {
+            .menu_icon_container {
+                .menu_icon_img {
+                    width: 10vw;
+                }
+
+            }
+
+        }
+
+        .menu_mobile {
+            display: none;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            background-color: white;
+            z-index: 1000;
+
+            .close_menu_btn {
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+                display: flex;
+                justify-content: flex-end;
+
+                i {
+                    font-size: 2rem;
+                    margin-right: 15vw;
+                }
+            }
+
+            ul {
+                margin: 0;
+                list-style-type: none;
+                padding: 0;
+                margin-top: 5vh;
+
+                li {
+                    font-size: 1.7rem;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 3vh;
+                }
+
+                .trait {
+                    height: 1px;
+                    background-color: black;
+                    width: 50vw;
+                    margin-left: 25vw;
+                    margin-bottom: 3vh;
+                }
+            }
+        }
+    }
+
+    .header_desktop {
+        display: none;
+    }
+}
+
+body {
+    section {
+        height: 100vh;
+        border: 2px solid olive;
+    }
+
+    #jumbotron {
+        height: 80vh;
+    }
+
+    .up {
+        position: fixed;  
+        height: 7vh;
+        width: 7vh;
+        border: 2px solid black;
+        top: 90vh;
+        left: 80vw;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        background-color: white;
+
+        .fa-angle-up {
+            font-size: 2rem;
+            line-height: 7vh;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .header_mobile {
+        display: none;
+    }
+    .header_desktop {
+        display: flex;
+    }
+}
+
+/* animations */
+  
+
+  
