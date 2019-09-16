@@ -85,20 +85,27 @@ header {
             }
         }
     }
-
-    .header_desktop {
-        display: none;
-    }
 }
 
 body {
     section {
         height: 100vh;
-        border: 2px solid olive;
     }
 
     #jumbotron {
         height: 80vh;
+        position: relative;
+
+        .jumbo_bgi {
+            height: 80vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -10;
+            filter: grayscale(55%);
+            opacity: 0.6;
+        }
     }
 
     .up {
@@ -124,10 +131,36 @@ body {
 
 @media only screen and (min-width: 800px) {
     .header_mobile {
-        display: none;
-    }
-    .header_desktop {
         display: flex;
+        justify-content: space-between;
+
+        .logo_container,
+        .menu_container {
+            width: 50vw;
+            display: flex;
+        }
+
+        .logo_container {
+            justify-content: flex-start!important;
+            padding-left: 3vw;
+        }
+
+        .menu_container {
+            justify-content: flex-end!important;
+            padding-right: 5vw;
+
+            .menu_icon_img {
+                width: 3vw!important;
+            }
+        }
+    }
+
+    #jumbotron {
+        height: 90vh!important;
+    }
+
+    .up {
+        left: 90vw!important;
     }
 }
 
