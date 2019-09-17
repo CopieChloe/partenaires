@@ -5,6 +5,21 @@
 $roboto: 'Roboto', sans-serif;
 $primary: orangered;
 
+
+
+@mixin btn() {
+    background-color: $primary;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    padding: 0 15px;
+    color: white;
+    font-size: 1.1rem;
+    box-shadow: 0px 2px 10px 1px black;
+    font-family: $roboto;
+}
+
+
 html, 
 body {
     margin: 0;
@@ -98,6 +113,7 @@ body {
             padding-top: 5vh;
             text-align: center;
             color: $primary;
+            margin-bottom: 8vh;
         }
     }
 
@@ -135,15 +151,7 @@ body {
             }
 
             .jumbo_btn {
-                background-color: $primary;
-                height: 50px;
-                border: none;
-                border-radius: 12px;
-                padding: 0 15px;
-                color: white;
-                font-size: 1.1rem;
-                box-shadow: 0px 2px 10px 1px black;
-                font-family: $roboto;
+                @include btn();
             }
         }
     }
@@ -173,7 +181,11 @@ body {
                         &:focus {
                             outline: none;
                             border-bottom: 2px solid $primary;
-                        }
+                        }                    
+                    }
+
+                    #submit_btn {
+                        @include btn();
                     }
                 }
             }
