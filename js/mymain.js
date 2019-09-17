@@ -36,6 +36,20 @@ $(document).ready(function(){
     $('.menu_mobile').hide();
     }); 
 
+    $("#menu_item7").click(function(){  
+    document.querySelector('#contact').scrollIntoView({ 
+        behavior: 'smooth' 
+        }); 
+        
+    $('.menu_mobile').hide();
+    });
+
+    $(".jumbo_btn").click(function(){  
+    document.querySelector('#contact').scrollIntoView({ 
+        behavior: 'smooth' 
+        }); 
+    });
+
     $(".up").click(function(){  
         $('html,body').animate({ scrollTop: 0 }, 'slow');
     }); 
