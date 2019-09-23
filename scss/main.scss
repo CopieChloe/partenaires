@@ -9,6 +9,7 @@
 
 $roboto: 'Roboto', sans-serif;
 $primary: orangered;
+$bgrey: rgb(245,245,245);
 
 
 
@@ -180,7 +181,8 @@ body {
     }
 
     #search {
-        background-color: rgb(245,245,245);
+        padding-top: 5vh; 
+        background-color: $bgrey;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -201,59 +203,21 @@ body {
         }
     }
 
-    #contact {
+    #tech {
 
-        .contact_form_container {
-            form {
-                width: 80vw;
-                margin-left: 10vw;
+    }
 
-                .field_container {
-                    display: flex;
-                    flex-direction: column;
-                    margin-bottom: 5vh;
+    #eco {
+        background-color: $bgrey; 
+    }
 
-                    label {
-                        margin-bottom: 2vh;
-                    }
+    #values {
 
-                    input, 
-                    textarea {
-                        border: none;
-                        border-bottom: 1px solid $primary;
-                        padding-bottom: 1vh;
-                        &:active,
-                        &:focus {
-                            outline: none;
-                            border-bottom: 2px solid $primary;
-                        }                    
-                    }
-
-                    #submit_btn {
-                        @include btn();
-                    }
-                }
-            }
-        }
-
-        .contact_info {
-            margin: 10vh 15vw;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-
-            a {
-                text-decoration: underline;
-                color: $primary;
-            }
-
-            .mail_link {
-                margin-bottom: 5vh;
-            }
-        }
     }
 
     #team {
+        background-color: $bgrey;
+        padding-top: 10vh;
         .team_avatars {
             .team_avatar {
                 width: 100vw;
@@ -303,6 +267,118 @@ body {
                         }
                     }
                 }
+            }
+
+            .last_team_avatar {
+                padding-bottom: 5vh;
+            }
+        }
+    }
+
+    #partner {
+        padding-bottom: 10vh;
+
+        .cobod_intro {
+            .cobod_logo_container {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 10vh;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgb(25, 25, 25);
+                    padding: 3vh 0;
+                    width: 70vw;
+                }
+            }
+
+            .cobod_text {
+                padding: 0 10vw;
+                text-align: center;
+                margin-bottom: 10vh;
+
+                .cobod_link {
+                    text-decoration: underline;
+                }
+            }
+
+            .cobod_printer {
+                margin-bottom: 10vh;
+
+                a {
+                    div {
+                        text-align: center;
+                        text-decoration: underline;
+                        margin-bottom: 3vh;
+                    }
+
+                    img {
+                        width: 80vw;
+                        margin-left: 10vw;
+                    }
+                }
+            }
+
+            .cobod_partnership {
+                text-align: center;
+                padding: 0 10vw; 
+            }
+        }
+    }
+
+    #contact {
+        padding-top: 5vh;
+        background-color: $bgrey;
+
+        .contact_form_container {
+            form {
+                width: 80vw;
+                margin-left: 10vw;
+
+                .field_container {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 5vh;
+
+                    label {
+                        margin-bottom: 2vh;
+                    }
+
+                    input, 
+                    textarea {
+                        background-color: $bgrey;
+                        border: none;
+                        border-bottom: 1px solid $primary;
+                        padding-bottom: 1vh;
+                        &:active,
+                        &:focus {
+                            outline: none;
+                            border-bottom: 2px solid $primary;
+                        }                    
+                    }
+
+                    #submit_btn {
+                        @include btn();
+                    }
+                }
+            }
+        }
+
+        .contact_info {
+            margin: 10vh 15vw 0 15vw;
+            padding-bottom: 10vh; 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+            a {
+                text-decoration: underline;
+                color: $primary;
+            }
+
+            .mail_link {
+                margin-bottom: 5vh;
             }
         }
     }
