@@ -235,6 +235,76 @@ body {
                 }
             }
         }
+
+        .contact_info {
+            margin: 10vh 15vw;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+            a {
+                text-decoration: underline;
+                color: $primary;
+            }
+
+            .mail_link {
+                margin-bottom: 5vh;
+            }
+        }
+    }
+
+    #team {
+        .team_avatars {
+            .team_avatar {
+                width: 100vw;
+                padding: 0 5vw;
+                margin-bottom: 20vh;
+                .avatar_head {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .avatar_img_container {
+                        
+                        border-radius: 50%;
+                        width: 70vw;
+                        height: 70vw;
+
+                        img {
+                            width: 70vw;
+                            height: 70vw;
+                            border-radius: 50%; 
+                            border: 3px solid $primary;
+                        }
+                    }
+                    .avatar_name {
+                        color: whitesmoke;
+                        font-weight: bold;
+                        letter-spacing: 2px;
+                        font-size: 1.3rem;
+                        border: 3px solid $primary;
+                        border-radius: 10px;
+                        padding: 5px 70px;
+                        transform: translateY(-10vh);
+                        background-color: $primary;
+                    }
+                }
+                .avatar_info {
+                    .avatar_job {
+                        font-weight: bold;
+                        text-align: center;
+                        margin-bottom: 5vh;
+                    }
+                    .avatar_mail {
+                        display: flex;
+                        justify-content: center;
+                        .avatar_mail_link {
+                            color: $primary;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .up {
@@ -289,6 +359,10 @@ body {
 
         .jumbo_bgi {
             height: 90vh!important;
+        }
+
+        .jumbo_txt {
+            width: 40vw!important;
         }
     }
 
