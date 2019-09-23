@@ -62,6 +62,18 @@ $(document).ready(function(){
         $( ".menu_mobile" ).slideUp();
     }); 
 
+    $(".form_link").click(function(){  
+        document.querySelector('#contact').scrollIntoView({ 
+            behavior: 'smooth' 
+          }); 
+    });
+
+    $(".values_link").click(function(){  
+        document.querySelector('#team').scrollIntoView({ 
+            behavior: 'smooth' 
+          }); 
+    });
+
 
 
     
