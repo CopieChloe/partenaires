@@ -1,5 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
 }
 
 $roboto: 'Roboto', sans-serif;
@@ -18,7 +19,6 @@ $primary: orangered;
     box-shadow: 0px 2px 10px 1px black;
     font-family: $roboto;
 }
-
 
 html, 
 body {
@@ -152,6 +152,29 @@ body {
 
             .jumbo_btn {
                 @include btn();
+            }
+        }
+    }
+
+    #project {
+        .project_intro {
+            padding: 0 30px;
+            text-align: center;
+
+            .bold {
+                font-weight: bold;
+            }
+        }
+
+        #carouselExampleControls {
+            height: 50vh;
+            margin: 10vh 5vw;
+
+            .carousel-item {
+                .d-block {
+                    height: 45vh;
+                    width: auto;
+                }
             }
         }
     }
