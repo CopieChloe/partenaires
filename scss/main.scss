@@ -206,7 +206,42 @@ body {
     }
 
     #eco {
-        background-color: $bgrey; 
+        position: relative;
+        height: 150vh;
+
+        .eco_bg_img {
+            position: absolute;
+            width: auto;
+            height: 150vh;
+            z-index: -1;          
+            opacity: 0.8;  
+        } 
+
+        .section_title {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 70vw;
+            margin-left: 15vw;
+            padding: 3vh 0;
+            top: 10vh;
+            height: 15vh;
+        }
+
+        .eco_content {
+            position: absolute;
+            text-align: center;
+            top: 30vh;
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 80vw;
+            margin-left: 10vw;
+            padding: 3vh;
+
+            .eco_p {
+                .partner_link {
+
+                }
+            }            
+        }
     }
 
     #values {
