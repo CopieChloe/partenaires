@@ -165,6 +165,7 @@ body {
         .project_intro {
             padding: 0 30px;
             text-align: center;
+            transform: translateY(30px);
         }
 
         #carouselExampleControls {
@@ -238,6 +239,7 @@ body {
             width: 80vw;
             margin-left: 10vw;
             padding: 3vh;
+            transform: translateY(30px); 
 
             .eco_p {
                 margin-bottom: 3vh;
@@ -262,11 +264,12 @@ body {
                 list-style-type: none;
                 padding: 0;
 
-                li {
+                .value_li {
                     margin-bottom: 10vh;
                     width: 80vw;
                     margin-left: 10vw;
                     text-align: center;
+                    transform: translateY(30px);
 
                     .value_icon_container {
                         width: 36vw;
@@ -486,6 +489,19 @@ body {
     }
 }
 
+/* animations */
+
+.scroll_translateY_top {
+    transform: translateY(0px)!important;
+    transition: all 500ms ease-out;
+}
+  
+.pulse {
+font-weight: bold;
+font-size: 1.1rem;
+transition: all 500ms ease-out;
+}
+
 @media only screen and (min-width: 800px) {
  
     .header_mobile {
@@ -573,6 +589,11 @@ body {
         }
     }
 
+    .scroll_translateY_bottom {
+        transform: translateY(0px)!important;
+        transition: all 500ms ease-out;
+    } 
+
     #values {
         .values_large_container {
             margin-top: 15vh; 
@@ -580,7 +601,8 @@ body {
             .values_img_container {
                 display: flex!important;
                 width: 45vw; 
-    
+                transform: translateY(-50px);
+
                 .values_img {
                     width: 45vw; 
                     height: 35vw;
@@ -688,9 +710,4 @@ body {
         left: 90vw!important;
 
     }
-}
-
-/* animations */
-  
-
-  
+} 
