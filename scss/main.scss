@@ -206,12 +206,12 @@ body {
 
     #eco {
         position: relative;
-        height: 150vh;
+        height: 155vh;
 
         .eco_bg_img {
             position: absolute;
             width: auto;
-            height: 150vh;
+            height: 155vh;
             z-index: -1;          
             opacity: 0.8;  
         } 
@@ -236,8 +236,11 @@ body {
             padding: 3vh;
 
             .eco_p {
+                margin-bottom: 3vh;
                 .partner_link {
-
+                    color: $primary;
+                    text-decoration: underline;
+                    margin-bottom: 0;
                 }
             }            
         }
@@ -245,6 +248,10 @@ body {
 
     #values {
         padding-top: 10vh;
+
+        .values_img_container {
+            display: none; 
+        }
 
         .values_list {
             ul {
@@ -476,6 +483,7 @@ body {
 }
 
 @media only screen and (min-width: 800px) {
+ 
     .header_mobile {
         display: flex;
         justify-content: space-between;
@@ -510,6 +518,122 @@ body {
 
         .jumbo_txt {
             width: 40vw!important;
+        }
+    }
+
+    #project {
+        padding-top: 10vh;
+        .project_intro {
+            padding: 0 15vw!important;
+        }
+        .carousel {
+            height: 60vh!important;
+            margin: 10vh 25vw!important;
+
+            .carousel-inner {
+                .carousel-item {
+                    .d-block {
+                        height: 60vh!important; 
+                    }
+                }
+            }
+        }
+    }
+
+    #search {
+        min-height: 85vh!important;
+    }
+
+    #eco {
+        min-height: 80vh!important;
+        height: 80vh!important; 
+
+        .eco_bg_img {
+            min-height: 80vh!important;
+            height: 80vh!important;  
+            width: 100vw!important;
+        }
+         
+        .section_title {
+            line-height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50vw!important;
+            margin-left: 25vw!important;
+        }
+
+        .eco_content {
+            width: 70vw!important;
+            margin-left: 15vw!important;
+        }
+    }
+
+    #values {
+        .values_large_container {
+            margin-top: 15vh; 
+            display: flex;
+            .values_img_container {
+                display: flex!important;
+                width: 45vw; 
+    
+                .values_img {
+                    width: 45vw; 
+                    height: 35vw;
+                }
+            } 
+
+            .values_list {
+                width: 55vw;
+                padding-top: 15vh;
+
+                ul {
+                    li {
+                        width: 100%; 
+                        margin-left: 0!important;
+                        .value_icon_container {
+                            height: 10vw!important;
+                            width: 10vw!important;
+
+                            .value_icon {
+                                height: 6vw!important;
+                                width: 6vw!important;
+                            }
+                        }
+
+                        .value_content {
+                            width: 80%;
+                            margin-left: 10%;
+                        }
+                    }
+                }
+                
+            }     
+
+        }
+    }
+
+    #team {
+        .team_avatars {
+            padding-left: 5vw;
+            display: flex;
+            .team_avatar {
+                width: 30vw!important;
+                .avatar_head {
+                    .avatar_img_container {
+                        width: 20vw!important;
+                        height: 20vw!important;
+                        img {
+                            width: 20vw!important;
+                            height: 20vw!important;
+                        }
+                    }
+                    .avatar_name {
+                        width: 20vw!important;
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 
