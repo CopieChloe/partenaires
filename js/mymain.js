@@ -25,24 +25,31 @@ $(document).ready(function(){
         $('.menu_mobile').hide();
     });
     $("#menu_item5").click(function(){  
-        document.querySelector('#team').scrollIntoView({ 
+        document.querySelector('#values').scrollIntoView({ 
             behavior: 'smooth' 
           }); 
         $('.menu_mobile').hide();
     }); 
     $("#menu_item6").click(function(){  
-    document.querySelector('#partner').scrollIntoView({ 
+    document.querySelector('#team').scrollIntoView({ 
         behavior: 'smooth' 
         }); 
     $('.menu_mobile').hide();
     }); 
     $("#menu_item7").click(function(){  
-    document.querySelector('#contact').scrollIntoView({ 
+    document.querySelector('#partner').scrollIntoView({ 
         behavior: 'smooth' 
         }); 
         
     $('.menu_mobile').hide();
     });
+    $("#menu_item8").click(function(){  
+        document.querySelector('#contact').scrollIntoView({ 
+            behavior: 'smooth' 
+            }); 
+            
+        $('.menu_mobile').hide();
+        });
 
     // menu open and close
     $(".menu_icon_img").click(function(){  
@@ -70,7 +77,7 @@ $(document).ready(function(){
     });
 
     $(".values_link").click(function(){  
-        document.querySelector('#team').scrollIntoView({ 
+        document.querySelector('#values').scrollIntoView({ 
             behavior: 'smooth' 
           }); 
     });

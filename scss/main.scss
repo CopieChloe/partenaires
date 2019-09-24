@@ -1,6 +1,6 @@
 $roboto: 'Roboto', sans-serif;
 $primary: orangered;
-$bgrey: rgb(245,245,245);
+$bgrey: rgb(239, 231, 252);
 
 * {
     font-family: $roboto;
@@ -72,8 +72,7 @@ header {
             z-index: 1000;
 
             .close_menu_btn {
-                margin-top: 5vh;
-                margin-bottom: 5vh;
+                margin-top: 3vh;
                 display: flex;
                 justify-content: flex-end;
 
@@ -87,10 +86,10 @@ header {
                 margin: 0;
                 list-style-type: none;
                 padding: 0;
-                margin-top: 5vh;
+                margin-top: 2vh;
 
                 li {
-                    font-size: 1.7rem;
+                    font-size: 1.3rem;
                     display: flex;
                     justify-content: center;
                     margin-bottom: 3vh;
@@ -245,7 +244,46 @@ body {
     }
 
     #values {
+        padding-top: 10vh;
 
+        .values_list {
+            ul {
+                list-style-type: none;
+                padding: 0;
+
+                li {
+                    margin-bottom: 10vh;
+                    width: 80vw;
+                    margin-left: 10vw;
+                    text-align: center;
+
+                    .value_icon_container {
+                        width: 36vw;
+                        height: 36vw;
+                        background-color: #E7DCF9;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 22vw;
+                        margin-bottom: 5vh;
+
+                        .value_icon {
+                            width: 20vw;
+                            height: 20vw;
+                        }
+                    }
+
+                    .value_title {
+                        font-size: 1.3rem; 
+                        margin-bottom: 3vh;
+                    }
+
+                    .value_content {
+                    }
+                }
+            }
+        }
     }
 
     #team {
