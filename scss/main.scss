@@ -1,17 +1,15 @@
+$roboto: 'Roboto', sans-serif;
+$primary: orangered;
+$bgrey: rgb(245,245,245);
+
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     letter-spacing: 1px;
 }
 
 .bold {
     font-weight: bold;
 }
-
-$roboto: 'Roboto', sans-serif;
-$primary: orangered;
-$bgrey: rgb(245,245,245);
-
-
 
 @mixin btn() {
     background-color: $primary;

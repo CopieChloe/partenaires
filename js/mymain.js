@@ -1,4 +1,5 @@
 $(document).ready(function(){  
+    // menu links
     $("#menu_item1").click(function(){  
         document.querySelector('#project').scrollIntoView({ 
             behavior: 'smooth' 
@@ -35,7 +36,6 @@ $(document).ready(function(){
         }); 
     $('.menu_mobile').hide();
     }); 
-
     $("#menu_item7").click(function(){  
     document.querySelector('#contact').scrollIntoView({ 
         behavior: 'smooth' 
@@ -44,6 +44,15 @@ $(document).ready(function(){
     $('.menu_mobile').hide();
     });
 
+    // menu open and close
+    $(".menu_icon_img").click(function(){  
+        $( ".menu_mobile" ).slideDown();
+    }); 
+    $(".close_menu_btn>i").click(function(){  
+        $( ".menu_mobile" ).slideUp();
+    }); 
+
+    // links inside document
     $(".jumbo_btn").click(function(){  
     document.querySelector('#contact').scrollIntoView({ 
         behavior: 'smooth' 
@@ -52,14 +61,6 @@ $(document).ready(function(){
 
     $(".up").click(function(){  
         $('html,body').animate({ scrollTop: 0 }, 'slow');
-    }); 
-
-    $(".menu_icon_img").click(function(){  
-        $( ".menu_mobile" ).slideDown();
-    }); 
-
-    $(".close_menu_btn>i").click(function(){  
-        $( ".menu_mobile" ).slideUp();
     }); 
 
     $(".form_link").click(function(){  
@@ -74,7 +75,10 @@ $(document).ready(function(){
           }); 
     });
 
+    $(".partner_link").click(function(){  
+        document.querySelector('#partner').scrollIntoView({ 
+            behavior: 'smooth' 
+        }); 
+    });
 
-
-    
 });  
